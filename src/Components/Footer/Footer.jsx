@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer_box">
         <div className="footer_card2">
           <div className="map_box" >
-            <iframe className="map_container" src="https://yandex.com/map-widget/v1/?um=constructor%3Ae514b2e6ac1c9732d57ab79a10d83085ef358bf42ce31a6a5b17447548674b9e&amp;source=constructor" width="536" height="463" frameborder="0"></iframe>
+            <iframe className="map_container" src="https://yandex.com/map-widget/v1/?um=constructor%3Ae514b2e6ac1c9732d57ab79a10d83085ef358bf42ce31a6a5b17447548674b9e&amp;source=constructor" width="615" height="484" frameborder="0"></iframe>
           </div>
         </div>
         <div className="footer_card1">
@@ -37,11 +37,9 @@ const Footer = () => {
                 Sotuv bo‘limi
               </div>
               <p className="footer_location_text">
-                Samarqand viloyati tumani Kamangaron
+                Namangan viloyati Namangan shahri
                 <br />
-                koʻchasi 14-uy
-                <br />
-                Moʻljal: Urgut City
+                A.Xoʻjayev koʻchasi 38-uy
               </p>
             </div>
             <div className="footer_social">

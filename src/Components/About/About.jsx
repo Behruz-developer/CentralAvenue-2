@@ -29,7 +29,7 @@ const About = () => {
                 </svg>
               </div>
               <p className="about_map_text_text">
-                Nurafshon -  Urgut shahrining markazida joylashgan bo‘lib, qulay joylashuv va rivojlangan infratuzilma bilan ta’minlangan. Bu sizga shaharning barcha asosiy nuqtalariga oson kirishni va qulay yashashni ta’minlaydi.
+                Central Avenue — rivojlangan infratuzilmaga ega,  qoʻshnilar bilan doʻstona munosabatlar oʻrnatish va ijtimoiy tadbirlarda qatnashish imkoniyatini taqdim etuvchi koʻp funksiyali majmua.
               </p>
               <p className="about_map_text_text2">Xaritada ko‘rish</p>
             </div>
@@ -37,10 +37,10 @@ const About = () => {
           <div className="about_card_text" data-aos="fade-left">
             <h2 className="about_title">Loyiha haqida</h2>
             <p className="about_text">
-              Urgut shahrida qad ko'tarilayotgan Nurafshon majmuasi — bu sizning orzularingizdagi ideal maskan. Ushbu zamonaviy majmua nafaqat estetik jihatdan chiroyli, balki turli qulayliklarga ega.
+              Biz faqat eng sifatli materiallar va zamonaviy texnologiyalardan foydalanamiz. Har bir xonadon mustahkam va uzoq muddatli boʻlishi uchun puxta rejalashtirilgan.
             </p>
             <p className="about_text">
-              Bu majmua yashash uchun ideal joy, shu bilan birga sizning hayotingizni qulay va farovon qilish uchun mo‘ljallangan ko‘plab boshqa funksiyalarni ham o‘z ichiga oladi. Sizning farovon hayotingiz uchun barcha sharoitlar yaratilgan!
+              Central Avenue shahar markaziga yaqin joylashgan boʻlib, barcha zaruriy infratuzilmalar bilan taʼminlangan. Savdo markazlari, maktablar, bogʻchalar va jamoat transporti — hammasi bir qadamda.
             </p>
           </div>
 
@@ -64,7 +64,7 @@ const About = () => {
                   </svg>
 
                 </div>
-                Bolalar o'yin <br /> zonasi
+                Bolalar <br />o‘yingohi
               </div>
               <div className="about_icon_text">
                 <div className="about_icon_text_card">
@@ -165,7 +165,9 @@ const About = () => {
 
 
                 </div>
-                Ko'p funksiyali <br /> hovli
+                Mualliflik
+                <br />
+                arxitekturasi
               </div>
               <div className="about_icon_text">
                 <div className="about_icon_text_card" >

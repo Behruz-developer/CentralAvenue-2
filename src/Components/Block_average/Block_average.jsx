@@ -7,7 +7,7 @@ const Block_average = () => {
         <img src={average} alt="" />
         <div className="average_card"></div>
         <div className="container">
-            <h2 className='average_title'>Bloklar joylashuvi</h2>
+            <h2 className='average_title'>Bloklar oʻrni</h2>
         </div>
     </div>
   )

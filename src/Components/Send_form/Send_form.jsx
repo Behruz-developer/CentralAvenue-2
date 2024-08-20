@@ -109,7 +109,7 @@ const Send_form = () => {
                 </p>
               </div>
               <button className="name_text" onClick={handleSubmit}>
-                Yuborish
+                Jo‘natish
               </button>
             </div>
           </div>

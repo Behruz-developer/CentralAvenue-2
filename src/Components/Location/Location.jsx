@@ -10,10 +10,10 @@ const Location = () => {
           <div className="location_card1" data-aos="fade-right" data-aos-offset="-200">
             <h3 className="location_title">Joylashgan o`rni</h3>
             <p className="location_text">
-              Majmua Urgut shahrining markazida quriladi va bu joy o‘zining baland tog‘lari va musaffo, toza havosi bilan ajralib turadi. Nurafshon majmuasi, tog‘larning qoyali manzaralari va havoning tozaligi bilan yashovchilarga alohida qulaylik va ilhom beradi.
+              Majmua Namangan shahrida qurilmoqda, qulay joylashuv nafaqat shahar markaziga yaqinlikni, balki turli xizmatlar, doʻkonlar va dam olish maskanlarining ham qoʻl ostida boʻlishini taʼminlaydi. Bu yerda siz barcha qulayliklardan bahramand boʻlasiz.
             </p>
             <p className="location_text">
-              Bu yerda yashash, shaharning jadal rivojlanishini va tabiatning go‘zalligini birgalikda his qilish imkoniyatini taqdim etadi.
+              Oilangiz bilan qulay va osoyishta hayot kechirish uchun eng yaxshi joy! Farzandlaringiz maktabga yaqin, siz esa barcha zarur xizmatlarga osongina yetib borishingiz mumkin.
             </p>
           </div>
           <div className="location_card_left" data-aos="fade-left" data-aos-offset="-200">
@@ -21,7 +21,8 @@ const Location = () => {
           </div>
           <div className="location_card2" data-aos="fade-right" data-aos-offset="-200">
             <p className="location_text2">
-              <span>Nurafshon</span> - Shahar markazidagi qulayliklar va tabiiy go‘zallik birgalikda sizga yorqin va farovon hayot tarzini taqdim etadi.
+              Central Avenue — Rivojlangan shahar infratuzilmasi qulayliklari va toza
+              havoni bir yerda jamlagan turar-joy majmuasi.
             </p>
           </div>
         </div>

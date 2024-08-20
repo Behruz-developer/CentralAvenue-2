@@ -49,10 +49,12 @@ const Upcoming = ({ images }) => {
                           className="slidet_text"
                           key={`navimage${index + 1}`}
                         >
-                          Qulay va farovon hayot uchun ideal maskan
+                          Oilaviy baxt va xotirjamlik
+                          shu yerdan boshlanadi
                         </h3>
                         <p className="slidet_text2">
-                          Nurafshon — Urgut shahrining markazida barpo etilayotgan zamonaviy turar-joy majmuasi bo‘lib, u farovon hayot uchun barcha zarur qulayliklar va zamonaviy infrastruktura bilan ta'minlangan.
+                          Central Avenue — Namangan shahrining markazida barpo etilayotgan zamonaviy turar-joy majmuasi boʻlib,
+                          unda oilangiz bilan xavfsiz va xotirjam hayot kechirish uchun barcha imkoniyatlar yaratilgan.
                         </p>
                       </div>
                       <div className="upcoming_icon2_card">

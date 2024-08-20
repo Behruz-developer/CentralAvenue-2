@@ -24,7 +24,9 @@ const Blocks_location = () => {
                 </svg>
               </div>
               <p className="blocks_location_map_text_text">
-                Foydalanilgan materiallar va chiroyli detallar ushbu majmuaning har bir qismida alohida qulaylik va o‘ziga xoslik yaratadi.
+                Majmua arxitekturasi zamonaviy materiallar
+                va innovatsion texnologiyalar yordamida
+                ishlab chiqilgan.
               </p>
               {/* <p className="blocks_location_map_text_text2">Xaritada ko‘rish</p> */}
             </div>
@@ -33,10 +35,10 @@ const Blocks_location = () => {
           <div className="blocks_location_card_text">
             <h2 className="blocks_location_title">Majmua arxitekturasi</h2>
             <p className="blocks_location_text">
-              Majmua o‘zining zamonaviy va estetik arxitekturasi bilan ajralib turadi. Har bir bino nafis va innovatsion dizayn bilan yaratilgan, bu majmuaga nafaqat zamonaviylik, balki tabiat bilan uyg‘unlikni ham taqdim etadi.
+              Central Avenue nafaqat qulay yashash sharoitlarini, balki goʻzallik va sanʼatning mukammal uygʻunligini ham taqdim etadi.
             </p>
             <p className="blocks_location_text">
-              Qulaylik va go‘zallikning mukammal uyg‘unligi, shahar hayoti va tabiiy muhitning o‘zaro to‘g‘ri balansini yaratadi. Yashash joyi sifatida Nurafshon sizga ilhom beruvchi va benuqson estetika bilan boyitilgan muhitni taqdim etadi.
+              Har bir bino nafis dizayn va zamonaviy arxitektura yechimlari asosida qurilgan. Ularning tashqi koʻrinishi nafislik va estetikani oʻzida mujassam etgan boʻlib, har bir burchakda goʻzallikni his qilasiz.
             </p>
           </div>
 
