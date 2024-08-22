@@ -118,13 +118,16 @@ const Send_form = () => {
                 </div>
               </div>
               <div className="form_chekbox">
-                <input
-                  type="checkbox"
-                  name=""
-                  checked={isChecked}
-                  id="consent"
-                  onChange={(e) => setIsChecked(e.target.checked)}
-                />
+                <div className="form_chekbox_container">
+                  {" "}
+                  <input
+                    type="checkbox"
+                    name=""
+                    checked={isChecked}
+                    id="consent"
+                    onChange={(e) => setIsChecked(e.target.checked)}
+                  />
+                </div>
                 <p className="name_text">
                   Shaxsiy maʼlumotlarim qayta ishlanishiga roziman
                 </p>
