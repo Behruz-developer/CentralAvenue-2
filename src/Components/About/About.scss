@@ -103,6 +103,7 @@
         @include media(650px) {
             grid-column: span 1;
             grid-row: 2;
+            margin-top: 0px;
         }
     }
 
@@ -120,6 +121,12 @@
         // @include media (1100px) {
         //     flex-wrap: wrap;
         // }
+        @include media (800px){
+            row-gap: 40px;
+        }
+        @include media (600px){
+            row-gap: 30px;
+        }
     }
 
     &_icon_text {

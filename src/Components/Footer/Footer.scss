@@ -6,6 +6,10 @@
 .footer {
     background: var(--gr-1);
 
+
+    @include media (650px){
+        margin-top: 20px;
+    }
     &_box {
         color: white;
         display: flex;
