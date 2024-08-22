@@ -8,12 +8,15 @@ import Nav from "./Components/Nav/Nav";
 import Upcoming from "./Components/Upcoming/Upcoming";
 import img1 from "./assets/images/slider-1.jpg";
 import img2 from "./assets/images/slider-2.jpg";
-import img3 from "./assets/images/slider-3.jpg";
 import Send_form from "./Components/Send_form/Send_form";
 import Block_average from "./Components/Block_average/Block_average";
 import Houses_plan from "./Components/Houses_plan/Houses_plan";
 import { useEffect, useState } from "react";
 import Loading from "./Components/Loading/Loading";
+import average from './assets/images/avarage.jpg'
+import average2 from './assets/images/average1.jpg'
+import average3 from './assets/images/average2.jpg'
+import average4 from './assets/images/average3.jpeg'
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,7 +45,7 @@ const App = () => {
 
     return () => window.removeEventListener('load', handlePageLoad);
   }, []);
-  const images = [img1, img2, img3];
+  const images = [img1, img2];
   return (
     <>
       {isLoading ? (
@@ -53,12 +56,18 @@ const App = () => {
           <Upcoming images={images} />
           <About />
           <Location />
-          <Block_average />
+          <Block_average img={average} />
           <Blocks_location />
+          <Block_average img={average2} />
+
           <Houses_plan />
           <Send_form />
-          <Construction />
+          <Block_average img={average3} />
+
+          {/* <Construction /> */}
           <Company />
+          <Block_average img={average4} />
+
           <Footer />
         </>
       )}

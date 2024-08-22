@@ -2,7 +2,6 @@
 import { useState } from "react";
 import form from "../../assets/images/slider-1.jpg";
 
-
 const Send_form = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [formData, setFormData] = useState({
@@ -15,7 +14,7 @@ const Send_form = () => {
     const chat_id = "-4226225906"; // Guruh ID sini shu yerda kiritish kerak
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
-    const message = `Ism: ${data.name}\nTel: ${data.tel}`;
+    const message = `#CentralAvenue\n Ism: ${data.name}\nTel: ${data.tel}`;
 
     try {
       const response = await fetch(url, {
@@ -40,14 +39,31 @@ const Send_form = () => {
     }
   };
 
+  const handleTelInput = (e) => {
+    var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,2})(\d{0,3})(\d{0,2})(\d{0,2})/);
+    e.target.value = '+' + (x[1] ? x[1] + ' ' : '') + (x[2] ? '(' + x[2] + ')' : '') + (x[3] ? ' ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+    setFormData({ ...formData, tel: e.target.value });
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    const formattedTel = formData.tel.replace(/\D/g, ''); // Faqat raqamlar
+
+    // Inputlarning to'ldirilganligini va telefon raqamining kamida 9 ta raqamdan iboratligini tekshirish
+    if (!formData.name || formattedTel.length < 9) {
+      alert("Iltimos, barcha maydonlarni to'ldiring va telefon raqamingiz to'g'ri ekanligini tekshiring.");
+      return;
+    }
+
     if (!isChecked) {
       alert('Iltimos, shaxsiy ma\'lumotlarimni qayta ishlashga rozilik bering.');
       return;
     }
 
-    const response = await sendToTelegramBot(formData);
+    const finalTel = `+${formattedTel}`;
+
+    const response = await sendToTelegramBot({ ...formData, tel: finalTel });
     if (response && response.ok) {
       alert("Xabar yuborildi!");
 
@@ -61,6 +77,7 @@ const Send_form = () => {
       alert("Xabar yuborishda xatolik yuz berdi");
     }
   };
+
   return (
     <form className="form" onSubmit={handleSubmit}>
       <div className="container">
@@ -96,19 +113,23 @@ const Send_form = () => {
                     id="tel"
                     placeholder="+998"
                     value={formData.tel}
-                    onChange={(e) =>
-                      setFormData({ ...formData, tel: e.target.value })
-                    }
+                    onChange={handleTelInput}
                   />
                 </div>
               </div>
               <div className="form_chekbox">
-                <input type="checkbox" name="" checked={isChecked} id="consent" onChange={(e) => setIsChecked(e.target.checked)} />
+                <input
+                  type="checkbox"
+                  name=""
+                  checked={isChecked}
+                  id="consent"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 <p className="name_text">
                   Shaxsiy maʼlumotlarim qayta ishlanishiga roziman
                 </p>
               </div>
-              <button className="name_text" onClick={handleSubmit}>
+              <button className="name_text" type="submit">
                 Jo‘natish
               </button>
             </div>

@@ -1,5 +1,4 @@
 import universal from "../../assets/images/about1.png";
-import about8 from "../../assets/images/about8.png";
 
 import AOS from 'aos'
 import 'aos/dist/aos.css';
@@ -20,14 +19,14 @@ const About = () => {
           <div className="about_card_left" data-aos="fade-right" data-aos-offset="-50">
             <img className="about_card_left_img" src={universal} alt="" />
             <div className="about_map_text">
-              <div className="about_map_text_box">
+              {/* <div className="about_map_text_box">
                 <svg className="about_map_text_img" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path className="about_map_text_img_color" d="M16.6665 19.3506V25.3332C16.6665 25.7012 16.9518 25.9999 17.3052 25.9999H24.0292C24.3812 25.9999 24.6665 25.7012 24.6665 25.3332V19.3146" stroke="black" stroke-width="2.3994" stroke-linecap="round" stroke-linejoin="round" />
                   <path className="about_map_text_img_color" d="M15.334 20.2227L20.7767 16.6667L26.0007 20.2227" stroke="black" stroke-width="2.3994" stroke-linecap="round" stroke-linejoin="round" />
                   <path className="about_map_text_img_color" fill-rule="evenodd" clip-rule="evenodd" d="M11.941 15.1559C13.7695 15.1559 15.2517 13.6737 15.2517 11.8453C15.2517 10.0168 13.7695 8.53461 11.941 8.53461C10.1126 8.53461 8.63037 10.0168 8.63037 11.8453C8.63037 13.6737 10.1126 15.1559 11.941 15.1559Z" stroke="black" stroke-width="2.3994" stroke-linecap="round" stroke-linejoin="round" />
                   <path className="about_map_text_img_color" d="M21.852 12.5653C22.0253 9.8173 21.0707 7.01197 18.9707 4.91197C15.088 1.0293 8.79467 1.0293 4.912 4.91197C1.02933 8.79464 1.02933 15.088 4.912 18.9706L11.9413 26" stroke="black" stroke-width="2.3994" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-              </div>
+              </div> */}
               <p className="about_map_text_text">
                 Central Avenue — rivojlangan infratuzilmaga ega,  qoʻshnilar bilan doʻstona munosabatlar oʻrnatish va ijtimoiy tadbirlarda qatnashish imkoniyatini taqdim etuvchi koʻp funksiyali majmua.
               </p>
@@ -49,7 +48,20 @@ const About = () => {
             <div className="about_card_icon">
               <div className="about_icon_text">
                 <div className="about_icon_text_card">
-                  <img src={about8} alt="" className="about_icon_text_img" />
+                  <svg className="about_icon_text_img" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_2045_3034" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="7" y="8" width="65" height="64">
+                      <rect x="7" y="8" width="65" height="64" fill="url(#pattern0_2045_3034)" />
+                    </mask>
+                    <g mask="url(#mask0_2045_3034)">
+                      <rect x="2" y="-4" width="76" height="88" fill="#1C2365" />
+                    </g>
+                    <defs>
+                      <pattern id="pattern0_2045_3034" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use href="#image0_2045_3034" transform="scale(0.0153846 0.015625)" />
+                      </pattern>
+                      <image id="image0_2045_3034" width="65" height="64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABACAMAAAByderSAAAAtFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////oK74hAAAAO3RSTlMAM7tl/AR2iAjoqpsL8V3Uow/tIjQdGNwt80MV2JGEcVD1TEjitX9sWVM4JZg8KhL3w7/Oy8dojkDPqe2tUEYAAAOYSURBVFjDpZbrWuIwFEVDL9haSqEg0IIiV0cRwVFQZ73/e80YaXojRZn1K/3OadKcnL0boadjertRaPnus2d2xI9pjz/I8jJu/Oz9mwjoe+Ppuraejr0RcCN+wL0L8+Uqu6Pl77X4Ns41uGNHnE3vFVptcT69EVFTGzVehydrGBA+aKO2y+7UmVwSdSvCXZ9LUYkJt9nnxmCQT7gFs7IIPm+Z18evFtTzKW/4PaHHo5+eYjMELHdaOOs+ntByZXGviuaBu+zaQrK5t1W7YV0JHRcEatyCayfz1FLjgAuhY55WaQz7bJ/DXVpt19ZM8M62rUpaWOiGMIm1t7xrZlhipC/MnWIBl6ox1bCIQT3d67gQ3Kc1qmNoyzBLNgFXxXOCpA9mzDWqhqfD8AG/FPZJ9LICJQ7dKlNGpfBI9XsbjnfEEySnFOOWwq7ao4DVcVHAMP3OTSG6Sfc4hOPSsC0G6YK/it5JmAwHWOI4I5qpxJ4LwWceleQYaZXZUjWxDrOlb1lPqUg8nckTqoa/Jurmvela7TbkVmfzmZDzgn+fOpPPR0M9EGp/BY8s1Hj4AYvY/lwzXkCQevSCR72PwiD1OA/wX4ydD3hpEw6gwot/08pOeBnxyfYy6/8tfgs9M6xOrjLvzbr5nhNBx2ImKnjlj6jmD6+V8VhtUl+qWFSy4Lky/sxCVDOwpCJ0/MIaiBNc47a1wbabtuZZSfrpixrS/f4flN6qMQjs4wYSYIjv0Ik097Ybom/eK++w1qLM2kr/fKf30S/beaOv9nCaXqgUllVU2BPf5haamvuRnmGz/sV4JQ9+8pT/mUxkm6zGh6xm6VY4jTgghWG/EDSyRQh4saWBJETT0hWsbxyQulj5POb8z19JXSRJc6JewehHTkFD2VI0KerNGeEVFHlbtt1J7TCsTcrmOs2r1DjiffaO+fCryHN29hFPNXL2WJMtA4Smug24GNLtDdwrdaghIBuuljFMO5ANtAmRGEn6eitvuG9pk18ZSMKNbDGlwD0T+VK7848LCz9WAsEUJkoOsY918ZnUltNN2CtPyWrxIWApnJY8sy0EsJXjliOWjB5yWnXbyaCRO6jYEQPKDIQdOzmtyaXlx5iixNQsMi0nmXL7h4I49YsD9YbQ00jTnOQIujCTLahoVploPm0GXbH4aoyNd3nAG1YpOE3bfLXiQkTE4nxiJqKP162dS9ejL+74H2S37fucT/9O/AWw+Z55pWtuZwAAAABJRU5ErkJggg==" />
+                    </defs>
+                  </svg>
 
                 </div>
                 Qulay <br /> joylashuv
@@ -85,15 +97,12 @@ const About = () => {
               </div>
               <div className="about_icon_text">
                 <div className="about_icon_text_card">
-                  <svg className="about_icon_text_img" id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-
-                    <g id="_Слой_1-2" data-name="Слой 1">
-                      <path className="about_icon_text_img_color" d="m0,.39v19.22c0,.2.19.39.39.39h3.56c.46,0,.43-.57.43-.86h11.25c0,.29-.04.86.43.86h3.56c.2,0,.39-.19.39-.39V.39c0-.2-.19-.39-.39-.39H.39c-.2,0-.39.19-.39.39Zm3.48,4.38v14.33H.9V.9h18.2v18.2h-2.58V4.77c0-.27-.22-.43-.51-.43H3.98c-.28,0-.51.15-.51.43Zm.89.46h5.19v13h-5.19V5.23Zm6.05,0h5.19v13h-5.19V5.23Z" />
-                      <path className="about_icon_text_img_color" d="m6.21,3.07c0,.24.17.37.5.37.29,0,.64-.41.87-.52.21.1.85.81,1.29.4.34-.31-.2-.6-.47-.79-.18-.14-.51-.44-.78-.46-.32-.01-.6.27-.79.41-.18.13-.61.38-.61.59Z" />
-                      <path className="about_icon_text_img_color" d="m11.03,2.4c0,.24.38.46.56.6.27.2.49.45.87.45.22,0,.5-.27.73-.44.26-.2.84-.5.49-.81-.46-.4-1.02.28-1.3.42-.07-.08-.52-.42-.63-.48-.15-.08-.29-.09-.45-.02-.11.05-.27.19-.27.29Z" />
-                      <path className="about_icon_text_img_color" d="m17.24,9.32c0,.36.53.48.66.11.19-.51-.66-.68-.66-.11Z" />
-                      <path className="about_icon_text_img_color" d="m17.24,10.65c0,.34.34.5.57.3.1-.08.14-.23.1-.36-.13-.4-.67-.23-.67.07Z" />
-                    </g>
+                  <svg className="about_icon_text_img" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.7601 72.6696H19.5601V72.8696C19.5601 72.9284 19.5604 72.9898 19.5607 73.0531C19.5633 73.5661 19.5665 74.2113 19.4146 74.7542C19.3303 75.0557 19.2026 75.3066 19.0162 75.4813C18.8344 75.6516 18.5814 75.764 18.2129 75.764H5.4033C5.10618 75.764 4.804 75.6216 4.57321 75.3908C4.34241 75.16 4.2 74.8578 4.2 74.5607V5.4033C4.2 5.10618 4.34241 4.804 4.57321 4.57321C4.804 4.34241 5.10618 4.2 5.4033 4.2H74.5967C74.8938 4.2 75.196 4.34241 75.4268 4.57321C75.6576 4.804 75.8 5.10618 75.8 5.4033V74.5607C75.8 74.8578 75.6576 75.16 75.4268 75.3908C75.196 75.6216 74.8938 75.764 74.5967 75.764H61.7871C61.4084 75.764 61.1509 75.6508 60.9681 75.4808C60.7807 75.3066 60.6543 75.0564 60.5723 74.7555C60.4291 74.2305 60.4343 73.6115 60.4385 73.1059C60.4392 73.0238 60.4399 72.9448 60.4399 72.8696V72.6696H60.2399H19.7601ZM16.7217 21.1634V20.9634H16.6987C16.7445 20.6203 16.9093 20.3572 17.1489 20.1694C17.4384 19.9425 17.8503 19.8162 18.3208 19.8162H61.6072C62.094 19.8162 62.5052 19.9506 62.7903 20.181C63.0712 20.408 63.2423 20.7374 63.2423 21.1634V72.7256V72.9256H63.4423H72.7256H72.9256V72.7256V7.23838V7.03838H72.7256H7.23838H7.03838V7.23838V72.7256V72.9256H7.23838H16.5217H16.7217V72.7256V21.1634ZM19.7241 22.6186H19.5241V22.8186V69.5952V69.7952H19.7241H38.3988H38.5988V69.5952V22.8186V22.6186H38.3988H19.7241ZM41.4933 22.6186H41.2933V22.8186V69.5952V69.7952H41.4933H60.1679H60.3679V69.5952V22.8186V22.6186H60.1679H41.4933Z" fill="#1C2365" stroke="white" stroke-width="0.4" />
+                    <path d="M31.3602 14.3281L31.2741 14.287L31.188 14.3282C30.9601 14.4372 30.7116 14.6155 30.4604 14.8098C30.342 14.9013 30.2273 14.993 30.1116 15.0854C29.9685 15.1998 29.8238 15.3153 29.6688 15.4335C29.3974 15.6404 29.127 15.829 28.8645 15.9656C28.6007 16.1028 28.3594 16.1797 28.1438 16.1797C27.5714 16.1797 27.1713 16.0661 26.9186 15.8776C26.7209 15.73 26.5973 15.5244 26.5582 15.2484H26.5807V15.0484C26.5807 14.9255 26.6455 14.7713 26.79 14.5871C26.9317 14.4063 27.1322 14.2193 27.3609 14.0345C27.6694 13.7854 28.0044 13.5586 28.295 13.362C28.442 13.2625 28.5776 13.1707 28.6927 13.0876L28.6927 13.0876L28.6943 13.0864C28.8169 12.9961 28.951 12.8889 29.0906 12.7773C29.1497 12.7301 29.2097 12.6821 29.2702 12.6343C29.4773 12.4708 29.6973 12.3034 29.9299 12.1535C30.3965 11.8526 30.8931 11.6351 31.4076 11.6499C31.8356 11.6831 32.3358 11.9426 32.8299 12.2808C33.1792 12.52 33.5037 12.7824 33.7824 13.0078C33.8972 13.1006 34.0042 13.1871 34.102 13.2632L34.1019 13.2634L34.1097 13.2689C34.2253 13.3503 34.3541 13.4364 34.487 13.5253L34.5154 13.5442C34.6591 13.6404 34.8081 13.7404 34.9556 13.8445C35.2522 14.0537 35.5345 14.2737 35.7474 14.5013C35.9628 14.7316 36.0862 14.9478 36.1053 15.1483C36.1231 15.3348 36.0541 15.5513 35.7812 15.8001L35.7812 15.8001L35.7796 15.8016C35.4287 16.1286 35.0449 16.2301 34.6457 16.1967C34.2375 16.1625 33.8073 15.9863 33.3845 15.7431C32.9632 15.5008 32.5643 15.2012 32.2177 14.9343C32.1816 14.9066 32.1461 14.8791 32.1111 14.8521C31.9793 14.7503 31.8553 14.6545 31.7439 14.573C31.605 14.4712 31.4732 14.3819 31.3602 14.3281Z" fill="#1C2365" stroke="white" stroke-width="0.4" />
+                    <path d="M43.8889 12.664C43.892 12.6243 43.9103 12.5658 43.9563 12.4889C44.0056 12.4063 44.0784 12.3169 44.1672 12.228C44.3459 12.0494 44.5687 11.8937 44.7415 11.815C45.257 11.5898 45.6961 11.6202 46.1842 11.8803C46.3669 11.9802 46.8573 12.3294 47.3456 12.7001C47.5872 12.8835 47.8235 13.0686 48.0145 13.2251C48.2106 13.3859 48.3454 13.5059 48.3955 13.5631L48.4973 13.6794L48.6355 13.6103C48.8987 13.4787 49.2169 13.2306 49.5504 12.9706C49.5643 12.9598 49.5782 12.949 49.5921 12.9381C49.9498 12.6595 50.3382 12.3592 50.7438 12.1193C51.1504 11.8789 51.5582 11.709 51.9521 11.6776C52.3371 11.6469 52.7197 11.7473 53.0918 12.0705C53.3709 12.3179 53.4356 12.5334 53.4126 12.7205C53.3874 12.9251 53.2517 13.148 53.0212 13.3871C52.794 13.6228 52.4973 13.8513 52.1916 14.0699C52.0827 14.1476 51.9713 14.2252 51.862 14.3011C51.6727 14.4327 51.4902 14.5597 51.3402 14.675C51.1611 14.8074 50.9738 14.9563 50.7855 15.106C50.753 15.1318 50.7205 15.1577 50.688 15.1835C50.4649 15.3605 50.2407 15.5361 50.0187 15.6921C49.564 16.0117 49.1606 16.2179 48.8339 16.2179C48.1993 16.2179 47.6968 16.0107 47.2283 15.7099C46.9923 15.5583 46.7663 15.3838 46.535 15.1991C46.4828 15.1573 46.4302 15.115 46.3771 15.0722C46.1981 14.9282 46.0142 14.7801 45.8244 14.6394C45.7063 14.5476 45.564 14.4458 45.4144 14.3388C45.3546 14.296 45.2936 14.2524 45.2326 14.2082C45.0145 14.0506 44.7889 13.8817 44.5846 13.7035C44.3796 13.5246 44.2024 13.3418 44.0777 13.1582C43.959 12.9835 43.895 12.8191 43.8889 12.664Z" fill="#1C2365" stroke="white" stroke-width="0.4" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M66.0332 37.5403C66.0332 38.8357 67.9402 39.2675 68.408 37.9361C69.0917 36.101 66.0332 35.4893 66.0332 37.5403Z" fill="#1C2365" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M66.0332 42.3221C66.0332 43.5454 67.2566 44.1212 68.0842 43.4015C68.444 43.1137 68.5879 42.5739 68.444 42.1062C67.9762 40.6669 66.0332 41.2786 66.0332 42.358V42.3221Z" fill="#1C2365" />
                   </svg>
                 </div>
                 Shovqinsiz <br /> liftlar
